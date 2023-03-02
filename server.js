@@ -9,6 +9,7 @@ app.use(express.static('public'));
 // Parses incoming request bodies that are submitted
 app.use(express.urlencoded({extended: true}));
 // Parses incoming JSON data
+app.use(express.json());
 
 app.use('/api', apiRoute);
 app.use('/', htmlRoute);
