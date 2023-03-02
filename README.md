@@ -6,11 +6,17 @@ This application uses Node.js and Express.js to write and save notes. Express.js
 ## Prerequisites
 In order to work on this project make sure to have node and express installed. The code editor I am using for this project is VSCode.
 
-## Usage
-
-
 ## Screenshots
+![home](./public/assets/images/note_taker_home_screenshot.png)
+![notes](./public/assets/images/note_taker_notes_screenshot.png)
 
-## Credits
+## Usage
+Click on "Get Started" to be taken to the notes page.
 
-## Links
+Save a new note by inputing text in the title and text area. Then use the save button near the top right to the left of the plus button to save your note.
+Delete a previous note by clicking on the red trash can icon.
+
+## Deployment
+[Heroku]()
+## Contact
+[GitHub](https://github.com/charles-ram/m11-express)
