@@ -7,7 +7,7 @@ const htmlRoute = require('./routes/html-route');
 // Listens for any incoming data
 app.use(express.static('public'));
 // Parses incoming request bodies that are submitted
-app.use(exprees.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: true}));
 // Parses incoming JSON data
 
 app.use('/api', apiRoute);
