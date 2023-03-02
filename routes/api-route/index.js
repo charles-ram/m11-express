@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {createNewNote, updateDB} = require("../../notes/notes");
+const {createNewNote, updateDb} = require("../../notes/notes");
 const { v4: uuidv4 } = require('uuid');
 const {notes} = require("../../db/db.json");
 
@@ -10,14 +10,14 @@ router.get("/notes", (req, res) => {
 });
 
 router.post("/notes", (req, res) => {
-    const params = req.params.id
-    updateDB(params, notes);
-    res.redirect('');
+    req.body.id = uuidv4();
+    const newNote = createNewNote(req.body, notes);
+    res.json(newNote);
 });
 
 router.delete("/notes/:id" , (req, res) => {
     const params = req.params.id
-    updateDB(params, notes);
+    updateDb(params, notes);
     res.redirect('');
 });
 
