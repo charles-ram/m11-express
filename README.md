@@ -17,6 +17,6 @@ Save a new note by inputing text in the title and text area. Then use the save b
 Delete a previous note by clicking on the red trash can icon.
 
 ## Deployment
-[Heroku]()
+[Heroku](https://express-note-taking-app.herokuapp.com/)
 ## Contact
 [GitHub](https://github.com/charles-ram/m11-express)
