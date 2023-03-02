@@ -8,4 +8,11 @@ const htmlRoute = require('./routes/html-route');
 app.use(express.static('public'));
 // Parses incoming request bodies that are submitted
 app.use(exprees.urlencoded({extended: true}));
-// 
+// Parses incoming JSON data
+
+app.use('/api', apiRoute);
+app.use('/', htmlRoute);
+
+app.listen(PORT, () => {
+    console.log(`App listening on PORT ${PORT}.`);
+});
